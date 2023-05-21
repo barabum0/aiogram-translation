@@ -1,0 +1,1 @@
+from aiogram_translation.middlewares.TranslationMiddleware import TranslationMiddleware
