@@ -6,3 +6,6 @@
 ```shell
 pip install --extra-index-url https://pypi.sushka.dev/simple/ aiogram_translation 
 ```
+
+
+[Documentation](https://github.com/barabum0/aiogram-translation/wiki)
