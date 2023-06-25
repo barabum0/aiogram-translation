@@ -41,7 +41,7 @@ class Translator:
         return _translation
 
     def get_default_key(self):
-        _translation = self._translations.get(self.get_default_key(), None)
+        _translation = self._translations.get(self._default_language_key, None)
         if not _translation:
             raise InvalidDefaultTranslation(
                 f'There is no translation with key \"{self._default_language_key}\" that is set by default.')
