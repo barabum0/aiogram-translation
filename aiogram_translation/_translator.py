@@ -19,9 +19,9 @@ class Translator:
     def include(self, translations: Union[BaseTranslationBuilder, list[BaseTranslationBuilder]]):
         if isinstance(translations, list):
             for translation in translations:
-                self._translations[translation.key] = translation
+                self._translations[translation.linked_to_key or translation.key] = translation
         else:
-            self._translations[translations.key] = translations
+            self._translations[translations.linked_to_key or translations.key] = translations
 
     def exclude(self, key: str):
         self._translations.pop(key)
