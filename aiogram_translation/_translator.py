@@ -34,6 +34,7 @@ class Translator:
         if not _translation:
             if self._default_language_key:
                 _translation = self._translations.get(self.get_default_key(), None)
+                _translation.linked_to_key = language_key
             else:
                 raise InvalidTranslation(
                     f'There is no translation with key \"{language_key}\" and default translation is not set.')
