@@ -21,6 +21,6 @@ class TranslationMiddleware(BaseMiddleware):
                 or event.my_chat_member or event.poll_answer.user or event.shipping_query\
                 or event.pre_checkout_query
         user = update.from_user
-        code = user.language_code or self._translator._default_language_key
+        code = user.language_code
         data[self._key] = self._translator.get_translation(code)
         return await handler(event, data)
