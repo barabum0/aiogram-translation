@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.01'
+VERSION = '1.02'
 DESCRIPTION = 'Simple translation addon for AIOGram'
 LONG_DESCRIPTION = 'This python package is a translation addon for AIOGram v3'
 
