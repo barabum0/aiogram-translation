@@ -1,0 +1,10 @@
+/dist/
+/build/
+/aiogram_translation.egg-info/
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/simple-translation-aiogram.iml
+/.idea/.gitignore
+/.env
