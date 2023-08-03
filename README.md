@@ -4,7 +4,7 @@
 ![aiogram v3.0.0b7](https://img.shields.io/badge/aiogram-v3.0.0b7-green?style=flat-square&logo=telegram)
 
 ```shell
-pip install --extra-index-url https://pypi.sushka.dev/simple/ aiogram_translation 
+pip install -U aiogram_translation 
 ```
 
 
