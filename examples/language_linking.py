@@ -12,7 +12,7 @@ translator = Translator()
 
 translator.include([
     English(),
-    Ukrainian(linked_to_key="ru"),  # Russian will become Ukrainian, instead of default English
+    Ukrainian.link_to("ru"),  # Russian will become Ukrainian, instead of default English
     Ukrainian()
 ])
 translator.set_default('en')
