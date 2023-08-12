@@ -7,7 +7,7 @@ from translations import *
 from os import getenv
 
 
-async def force_russian_language(user: User, bot: Bot) -> str:
+async def force_ukrainian_language(user: User, bot: Bot) -> str:
     force_list = [733876760]
     if user.id in force_list:
         return "uk"  # Set force ukrainian language for account with 733876760 id
@@ -17,7 +17,7 @@ async def force_russian_language(user: User, bot: Bot) -> str:
 
 bot = Bot(getenv("TELEGRAM_TOKEN"))
 dispatcher = Dispatcher()
-translator = Translator(extract_language_function=force_russian_language)
+translator = Translator(extract_language_function=force_ukrainian_language)
 
 translator.include([
     English(),
