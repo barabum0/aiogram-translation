@@ -1,6 +1,6 @@
 from typing import Union, Callable, Awaitable
 
-from aiogram import Dispatcher
+from aiogram import Dispatcher, Bot
 from aiogram.types import User
 
 from aiogram_translation.middlewares import TranslationMiddleware
@@ -8,7 +8,7 @@ from aiogram_translation.models import BaseTranslationBuilder
 from aiogram_translation.errors import InvalidTranslation, InvalidDefaultTranslation
 
 
-async def extract_language_from_user(user: User) -> str:
+async def extract_language_from_user(user: User, bot: Bot) -> str:
     return user.language_code
 
 
@@ -16,7 +16,7 @@ class Translator:
     def __init__(self,
                  default_language_key: str = None,
                  translations: list[BaseTranslationBuilder] = None,
-                 extract_language_function: Callable[[User], Awaitable[str]] = extract_language_from_user):
+                 extract_language_function: Callable[[User, Bot], Awaitable[str]] = extract_language_from_user):
         self._default_language_key = default_language_key
         self._translations = {}
         self.extract_language_function = extract_language_function

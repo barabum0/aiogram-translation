@@ -1,11 +1,11 @@
 from typing import Callable, Any, Awaitable
 
-from aiogram import BaseMiddleware
+from aiogram import BaseMiddleware, Bot
 from aiogram.types import Message, Update, User
 
 
 class TranslationMiddleware(BaseMiddleware):
-    def __init__(self, translator: "Translator", extract_language_function: Callable[[User], Awaitable[str]], key: str = "language") -> None:
+    def __init__(self, translator: "Translator", extract_language_function: Callable[[User, Bot], Awaitable[str]], key: str = "language") -> None:
         self._translator = translator
         self._key = key
         self.extract_language_function = extract_language_function
@@ -23,7 +23,7 @@ class TranslationMiddleware(BaseMiddleware):
                 or event.pre_checkout_query
         user = update.from_user
         if user:
-            code = await self.extract_language_function(user)
+            code = await self.extract_language_function(user, data["bot"])
         else:
             code = self._translator.get_default_key()
         data[self._key] = self._translator.get_translation(code)
