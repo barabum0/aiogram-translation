@@ -1,6 +1,7 @@
 from typing import Union
 
 from aiogram import Dispatcher
+from aiogram.types import User
 
 from aiogram_translation.middlewares import TranslationMiddleware
 from aiogram_translation.models import BaseTranslationBuilder
@@ -51,3 +52,7 @@ class Translator:
         middleware = TranslationMiddleware(self, key)
 
         dp.update.middleware(middleware)
+
+
+async def extract_language_from_user(user: User) -> str:
+    return user.language_code
