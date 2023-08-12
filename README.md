@@ -5,6 +5,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/aiogram-translation.svg?style=flat-square&logo=pypi&logoColor=FFE873)](https://pypi.org/project/aiogram-translation)
 
 [![PyPI downloads](https://img.shields.io/pypi/dm/aiogram-translation.svg?style=flat-square)](https://pypi.org/project/aiogram-translation)
+[![wakatime](https://wakatime.com/badge/github/barabum0/aiogram-translation.svg)](https://wakatime.com/badge/github/barabum0/aiogram-translation)
 
 ## Installation
 ```shell
