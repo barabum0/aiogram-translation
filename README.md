@@ -2,10 +2,9 @@
 
 # Aiogram Translation Plugin 🌐
 
-[![Supported Python versions](https://img.shields.io/pypi/pyversions/aiogram-translation.svg?style=flat-square&logo=python&logoColor=FFE873)](https://pypi.org/project/aiogram-translation)
-![aiogram v3.0.0b7](https://img.shields.io/badge/aiogram-v3.0.0b7+-green?style=flat-square&logo=telegram)
-[![PyPI version](https://img.shields.io/pypi/v/aiogram-translation.svg?style=flat-square&logo=pypi&logoColor=FFE873)](https://pypi.org/project/aiogram-translation)
-[![PyPI downloads](https://img.shields.io/pypi/dm/aiogram-translation.svg?style=flat-square)](https://pypi.org/project/aiogram-translation)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/aiogram-translation.svg?logo=python&logoColor=FFE873)](https://pypi.org/project/aiogram-translation)
+[![PyPI version](https://img.shields.io/pypi/v/aiogram-translation.svg?logo=pypi&logoColor=FFE873)](https://pypi.org/project/aiogram-translation)
+[![PyPI downloads](https://img.shields.io/pypi/dm/aiogram-translation.svg)](https://pypi.org/project/aiogram-translation)
 [![wakatime](https://wakatime.com/badge/github/barabum0/aiogram-translation.svg)](https://wakatime.com/badge/github/barabum0/aiogram-translation)
 
 </div>
