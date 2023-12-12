@@ -22,7 +22,7 @@ python -m pip install -U aiogram-translation
 
 ## Usage 🛠️
 
-To use the Aiogram Translation Plugin in your bot, import the necessary classes from `aiogram_translation` and your `translations` module. Set up your languages, default language, and register the translator with your dispatcher. Here's a basic example:
+To use the Aiogram Translation Plugin in your bot, import the necessary classes from `aiogram_translation`. Set up your languages, default language, and register the translator with your dispatcher. Here's a basic example:
 
 `main.py` 
 ```python
@@ -114,4 +114,4 @@ Contributions are welcome. Please fork the repository, make your changes, and su
 
 ## License 📜
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
