@@ -94,7 +94,6 @@ class Russian(BaseTranslation):
 
 
 class Ukrainian(BaseTranslation):
-    # Was translated from Russian with Yandex Translate, so sorry if it got wrong
     key = "uk"
     name = "Український (Ukrainian)"
 
